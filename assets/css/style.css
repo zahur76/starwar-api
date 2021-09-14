@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+html, body {
+    height: 100%;
+  }
+
+body {
+    background-image: url("/images/stars.jpg");
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+img {
+    height: 75px;
+}
+
+.charModal img {
+    height: 200px;
+}
+
+.zoom {  
+    transition: transform .2s; 
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+
+.overlay {
+    background: white;
+}
+
+.logo {
+    font-family: 'Bungee', cursive;
+    font-size: 56px;    
+}
+
+.star-match {
+    font-family: 'Bungee', cursive;
+    font-size: 40px;   
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.background {     
+    background-color: rgb(54, 54, 54,0.85) !important; 
+}
+
+.modal {    
+    left: 25%;
+    top: 25%;
+}
+
+.bg-storm {
+    background-position: center;
+    background-image: url("/images/storm.jpg");
+}
+
+.charModal {    
+    left: 37.5%;
+    top: 25%;
+}
+
+
+.home:hover {
+    color: blue;
+}
+
+.character-form {
+    width: 30%;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+footer {    
+    flex-shrink: 0;
+    bottom: 0px;
+    height: 60px;
+    background: rgba(197, 186, 186, 0.5);
+}
+
+.footer {
+    line-height: 60px;
+}
+
+/* Media Screen */
+@media screen and (max-width: 1024px){
+    .charModal img {
+        height: 175px;
+    }
+
+    .text-description {
+        font-size: 14px;
+    }
+} 
+
+@media screen and (max-width: 786px){
+    .logo {
+        font-size: 44px;
+    }
+
+    .star-match {        
+        font-size: 30px;   
+    }    
+
+    .login-modal {
+        left: 12.5%;
+        width: 75% !important;
+    }
+
+    .character-form {
+        width: 50%;
+    }
+
+    .charModal {
+        width: 40% !important;
+        left: 30%;
+    }
+} 
+
+@media screen and (max-width: 576px){
+    .logo {
+        font-size: 32px;
+    }
+
+    .character-form {
+        width: 75%;
+    }
+
+    .form-control {
+        width: 60%;        
+        padding: 3px;       
+    }
+
+    .charModal {
+        width: 50% !important;
+        left: 25%;
+    }
+} 
+
+@media screen and (max-width: 420px){
+    .logo {
+        font-size: 28px;
+    }    
+}
+
+@media screen and (max-width: 386px){
+    .logo {
+        font-size: 24px;
+    }
+
+    .charModal {
+        width: 75% !important;
+        left: 12.52%;
+    }
+}   
